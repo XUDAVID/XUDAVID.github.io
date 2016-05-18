@@ -1,0 +1,96 @@
+/* ::::: http://img1.leoge.com/static/css/app.css ::::: */
+
+html, body { font-family: "微软雅黑"; height: 100%; width: 100%; margin: 0px; padding: 0px; position: relative; }
+* { box-sizing: border-box; }
+#leoge { font-size: 14px; height: 100%; width: 100%; position: relative; backface-visibility: hidden; }
+#leoge .bgm-wrap { cursor: pointer; display: block; height: 27px; width: 27px; position: absolute; right: 10px; top: 40px; z-index: 999; }
+#leoge .bgm-wrap audio { display: none; }
+#leoge .bgm { background: transparent url('leoge_music.png') no-repeat scroll center center / cover ; display: block; height: 27px; width: 27px; }
+#leoge .play .bgm { animation: 1.2s linear 0s normal none infinite running bgm-rotate; }
+#leoge .bgm-n { background: transparent url('leoge_musicnote.png') no-repeat scroll center center / cover ; cursor: pointer; display: none; height: 15px; width: 10px; position: absolute; right: 5px; top: 0px; z-index: 999; animation: 1.2s linear 0s normal none infinite running bgm-note1; }
+#leoge .play .bgm-n { display: block; }
+#leoge .play .bgm-n1 { animation: 1.2s linear 0s normal none infinite running bgm-note1; }
+#leoge .play .bgm-n2 { animation: 1s linear 0s normal none infinite running bgm-note2; }
+#leoge .play .bgm-n3 { animation: 1.5s linear 0s normal none infinite running bgm-note3; }
+#leoge .play .bgm-n4 { animation: 1.4s linear 0s normal none infinite running bgm-note4; }
+#leoge .play .bgm-n5 { animation: 1.9s linear 0s normal none infinite running bgm-note1; }
+#leoge .play .bgm-n6 { animation: 1.7s linear 0s normal none infinite running bgm-note2; }
+#leoge .play .bgm-n7 { animation: 2s linear 0s normal none infinite running bgm-note3; }
+#leoge .play .bgm-n8 { animation: 1.6s linear 0s normal none infinite running bgm-note4; }
+.page { background-repeat: no-repeat; background-position: center center; background-size: cover; height: 100%; width: 100%; position: absolute; left: 0px; top: 0px; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px); transition: transform 1s ease-out 0s; }
+.page::before { background: rgba(0, 0, 0, 0.6) none repeat scroll 0% 0%; content: ""; position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; }
+.page .body { background-repeat: no-repeat; background-position: center center; background-size: cover; color: rgb(239, 239, 239); height: 100%; margin: 0px auto; position: relative; transform: translate3d(0px, 0px, 0px); backface-visibility: hidden; }
+.page form { display: block; height: 100%; width: 100%; }
+.body-widget { display: inline-block; position: absolute; left: 20%; top: 35%; }
+.body-widget img { display: block; height: 100%; width: 100%; }
+#leoge .animate, .leoge .animate { height: 100%; width: 100%; transform: translate3d(0px, 0px, 0px); backface-visibility: hidden; animation-fill-mode: both; animation-duration: 2s; animation-delay: 0.5s; }
+#leoge .stable, .leoge .stable { height: 100%; width: 100%; word-wrap: break-word; }
+#leoge .editable, .leoge .editable { overflow: hidden; height: 100%; width: 100%; }
+#leoge * { font-family: "微软雅黑"; line-height: 1.4; box-sizing: content-box; }
+#leoge .arrow { display: block; height: 15px; margin-left: -12.5px; width: 25px; position: absolute; left: 50%; bottom: 10px; z-index: 100; }
+#leoge .arrow img { height: 15px; width: 25px; position: absolute; left: 0px; top: 0px; animation: 1.5s ease-in-out 0s normal none infinite running leoge_arrow; }
+.leoge-loading-wrap { background: rgb(0, 0, 0) none repeat scroll 0% 0%; display: none; height: 100%; width: 100%; position: absolute; left: 0px; top: 0px; z-index: 999999; }
+.leoge-loading { width: 60px; height: 60px; margin: -30px auto auto -30px; position: absolute; left: 50%; top: 50%; }
+.leoge-loading .container1 > div, .leoge-loading .container2 > div, .leoge-loading .container3 > div { width: 12px; height: 12px; background-color: rgb(93, 207, 74); border-radius: 100%; position: absolute; animation: 1.2s ease-in-out 0s normal both infinite running loadinganimate; }
+.leoge-loading .leoge-loading-container { position: absolute; width: 100%; height: 100%; }
+.leoge-loading .container2 { transform: rotateZ(45deg); }
+.leoge-loading .container3 { transform: rotateZ(90deg); }
+.leoge-loading .circle1 { top: 0px; left: 0px; }
+.leoge-loading .circle2 { top: 0px; right: 0px; }
+.leoge-loading .circle3 { right: 0px; bottom: 0px; }
+.leoge-loading .circle4 { left: 0px; bottom: 0px; }
+.leoge-loading .container2 .circle1 { animation-delay: -1.1s; }
+.leoge-loading .container3 .circle1 { animation-delay: -1s; }
+.leoge-loading .container1 .circle2 { animation-delay: -0.9s; }
+.leoge-loading .container2 .circle2 { animation-delay: -0.8s; }
+.leoge-loading .container3 .circle2 { animation-delay: -0.7s; }
+.leoge-loading .container1 .circle3 { animation-delay: -0.6s; }
+.leoge-loading .container2 .circle3 { animation-delay: -0.5s; }
+.leoge-loading .container3 .circle3 { animation-delay: -0.4s; }
+.leoge-loading .container1 .circle4 { animation-delay: -0.3s; }
+.leoge-loading .container2 .circle4 { animation-delay: -0.2s; }
+.leoge-loading .container3 .circle4 { animation-delay: -0.1s; }
+#leoge .zoom-move { display: none; transform: translate(0px, 100%) translate3d(0px, 0px, 0px); transform-origin: 50% 0px 0px; }
+#leoge .zoom-move.out { display: block; transform: translate(0px, -25%) translate3d(0px, 0px, 0px) scale(0.5); z-index: 1; }
+#leoge .zoom-move.in { display: block; transform: translate(0px, 0px) translate3d(0px, 0px, 0px); z-index: 2; }
+.fadein-right { opacity: 0; animation: 2s ease 0.5s normal none 1 running fadein-right; }
+.bouncein { opacity: 0; animation: 2s ease 0.5s normal none 1 running bouncein; }
+/* ::::: http://img1.leoge.com/static/css/app-view.css ::::: */
+
+html, body { background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(83, 83, 83); font-family: "微软雅黑"; min-width: 800px; overflow: hidden; }
+a { color: rgb(83, 83, 83); }
+a:hover { color: rgb(73, 206, 51); }
+a:focus { outline: medium none; }
+*, *::before, *::after { box-sizing: border-box; }
+#phone { height: 620px; margin: -310px auto auto -160px; width: 320px; position: absolute; left: 35%; top: 50%; }
+.phone-header { background: rgb(214, 214, 214) none repeat scroll 0% 0%; border-radius: 40px 40px 0px 0px; height: 40px; line-height: 40px; text-align: center; }
+.phone-header .receiver { background: rgb(102, 102, 102) none repeat scroll 0% 0%; border-radius: 3px; display: inline-block; height: 6px; width: 10%; }
+.phone-status { background: rgb(0, 0, 0) none repeat scroll 0% 0%; color: rgb(255, 255, 255); font-family: Arial; font-size: 10px; height: 20px; line-height: 20px; overflow: hidden; text-align: center; padding: 0px 6px; position: relative; }
+.phone-status span { height: 100%; }
+.phone-status .time { display: inline-block; height: 12px; line-height: 12px; margin-left: -20px; text-align: center; width: 40px; position: absolute; left: 50%; top: 4px; }
+.phone-status span i { display: inline-block; margin: 0px 4px; vertical-align: middle; position: relative; }
+.phone-status .net i { height: 10px; width: 42px; }
+.phone-status .net i::before { content: ""; background: rgb(239, 239, 239) none repeat scroll 0% 0%; border-radius: 3px; box-shadow: 9px 0px 0px rgb(239, 239, 239), 18px 0px 0px rgb(239, 239, 239), 27px 0px 0px rgb(239, 239, 239); display: inline-block; height: 6px; width: 6px; position: absolute; left: 0px; top: 2px; }
+.phone-status .net i::after { content: ""; border: 1px solid rgb(239, 239, 239); border-radius: 6px; display: inline-block; height: 6px; width: 6px; position: absolute; left: 36px; top: 2px; }
+.phone-status .battery i { border: 1px solid rgb(239, 239, 239); border-radius: 1px; height: 10px; width: 20px; }
+.phone-status .battery i::before { content: ""; background: rgb(239, 239, 239) none repeat scroll 0% 0%; display: block; position: absolute; top: 1px; right: 1px; bottom: 1px; left: 1px; }
+.phone-status .battery i::after { content: ""; background: rgb(239, 239, 239) none repeat scroll 0% 0%; display: block; height: 4px; width: 3px; position: absolute; top: 2px; right: -3px; }
+.phone-footer { background: rgb(214, 214, 214) none repeat scroll 0% 0%; border-radius: 0px 0px 40px 40px; height: 40px; }
+.pull-left { float: left; }
+.pull-right { float: right; }
+#phone-body { background: rgb(0, 0, 0) none repeat scroll 0% 0%; cursor: pointer; height: 520px; overflow: hidden; position: relative; }
+#leoge { background-repeat: no-repeat; background-position: center center; background-size: cover; height: 100%; width: 100%; position: relative; }
+#share { color: rgb(108, 195, 22); font-size: 14px; height: 520px; margin: -260px -140px auto auto; width: 280px; position: absolute; right: 35%; top: 50%; }
+/* ::::: http://bdimg.share.baidu.com/static/api/css/share_style0_32.css?v=4413acf0.css ::::: */
+
+.bdshare-button-style0-32 .bds_tsina { background-position: 0px -104px; }
+.bdshare-button-style0-32 .bds_tqq { background-position: 0px -260px; }
+.bdshare-button-style0-32 .bds_douban { background-position: 0px -468px; }
+.bdshare-button-style0-32 .bds_huaban { background-position: 0px -1872px; }
+.bdshare-button-style0-32 .bds_sqq { background-position: 0px -2652px; }
+.bdshare-button-style0-32 .bds_weixin { background-position: 0px -1612px; }
+.bdshare-button-style0-32 {  }
+.bdshare-button-style0-32::after { content: "."; visibility: hidden; display: block; height: 0px; clear: both; }
+.bdshare-button-style0-32 a { float: left; width: 32px; line-height: 32px; height: 32px; background-image: url('icons_0_32.png'); background-repeat: no-repeat; cursor: pointer; margin: 6px 6px 6px 0px; text-indent: -100em; overflow: hidden; color: rgb(58, 140, 235); }
+.bdshare-button-style0-32 a:hover { color: rgb(51, 51, 51); opacity: 0.8; }
+.bdshare-button-style0-32 .bds_more { color: rgb(51, 51, 51); }

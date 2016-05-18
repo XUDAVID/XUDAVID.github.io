@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css"/>
+		<script src="js/swiper-3.3.1.min.js"></script>
+		<script src="js/swiper.animate1.0.2.min.js"></script>
+		<script src="js/jquery-1.9.1.js"></script>
+		<script src="js/new_file.js"></script>
+		<style type="text/css">
+			html{
+				font-size: 100px;
+			}
+			
+			img{
+				display: block;								
+			}
+			/*page1*/
+			.bg{
+				background: url("img/1604062409507705.png") no-repeat left top;
+				background-size:100% 100%;	
+				height: 5.2rem;		
+				position: relative;	
+			}
+			
+			.logo{
+				height: 0.62rem;
+			}
+			
+			.logo2{
+				position: absolute;top: 0.48rem;left: 1.34rem;
+			}
+			
+			.logo3{
+				position: absolute;top: 0.6rem;
+			}
+			
+			.logo4{
+				position: absolute;bottom: 0.55rem;
+			}
+			
+			/*page2*/
+			.bg2{
+				background: url("img/1604062562910527.png") no-repeat left top;
+				background-size:100% 100%;	
+				height: 5.22rem;		
+				position: relative;	
+			}
+			
+			.logo21{
+				height: 1.06rem;
+				position: relative;
+			}
+			
+			/*page3*/
+			.bg3{
+				background: url("img/1604062562910527.png") no-repeat left top;
+				background-size:100% 100%;	
+				height: 5.22rem;		
+				position: relative;	
+			}
+			
+			.logo31{
+				height: 1.14rem;
+			}
+			
+			.logo32{
+				width: 3.2rem;
+				height: 3.46rem;
+			}
+			
+			.P1{
+				width: 1.8rem;
+				height: 0.48rem;
+				position: absolute;
+				left: 0.66rem;
+				top: 1.57rem;
+				z-index: 6;
+				text-align: center;
+				font-size: 0.24rem;
+				color: red;
+				font-weight: bolder;
+			}
+			
+			.P2{
+				width: 2rem;
+				height: 0.62rem;
+				position: absolute;
+				left: 0.53rem;
+				top: 2.43rem;
+				z-index: 6;
+				text-align: left;
+				font-size: 0.24rem;
+				color: red;
+				font-weight: bolder;
+			}
+			
+			.P3{
+				width: 1.76rem;
+				height: 0.27rem;
+				position: absolute;
+				left: 0.8rem;
+				top: 3.47rem;
+				z-index: 6;
+				text-align: left;
+				font-size: 0.24rem;
+				color: red;
+				font-weight: bolder;
+			}
+			
+			/*page4*/
+			.bg4{
+				background: url("img/1604062409507705.png") no-repeat left top;
+				background-size:100% 100%;	
+				height: 5.2rem;		
+				position: relative;	
+			}
+			
+			.P4{
+				position: absolute;
+				width: 1.47rem;
+				height: 0.35rem;
+				top: 0.17rem;
+				left: 0.76rem;
+			}
+			
+			.P5{
+				width: 1.6rem;
+				height: 0.18rem;
+				text-align: center;
+				left: 0.8rem;
+				bottom: 0.95rem;
+				position: absolute;
+			}
+			
+			/*music*/
+			.music{
+				width:0.25rem;
+				height:0.25rem;
+				border-radius:50%;
+				position:absolute;
+				z-index:88;
+				background:rgba(0,0,0,0.4);
+				top:0.38rem;
+				left:2.65rem;
+				
+			}
+			
+			.music img{
+				width:0.15rem;
+				height:0.15rem;
+				display: block;
+				margin-top:0.05rem;
+				margin-left:0.05rem;				
+			}
+			
+			.musiC{
+				animation:move5 1s linear infinite;;
+			}
+			
+			@keyframes move5{
+				from{
+					transform: rotate(0deg);
+				}
+				to{
+					transform:rotate(360deg);
+				}
+			}
+			
+			#audio{
+				display: none;
+			}
+		</style>		
+	</head>
+	
+	<body>
+		
+		<div class="swiper-container">	
+			<div class="music">
+				<img src="img/icon.png">
+				<audio src="Alan Walker - Faded - Amice混音版.mp3"controls="controls" id="audio"></audio>
+			</div>
+			<div class="swiper-wrapper">
+				<!-------------第一页----------------->
+				<section class="swiper-slide swiper-slide1">
+					<div class="bg">
+						<div class="logo ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+							<img src="img/1604062472407846.png" style="width:3rem;height: 0.6rem;padding-top: 0.15rem;padding-left: 0.1rem;"/>
+						</div>
+						<div class="logo2 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
+							<img src="img/1604062494599319.png" style="width:1.65rem;height: 0.6rem;"/>
+						</div>
+						<div class="logo3 ani" swiper-animate-effect="flipInY" swiper-animate-duration="1s" swiper-animate-delay="1.2s">
+							<img src="img/1604062444083666.png" style="width:3.2rem;height: 3.25rem;"/>
+						</div>
+						<div class="logo4 ani" swiper-animate-effect="slideInDown" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+							<img src="img/1604062431332554.png" style="width:2.8rem;height: 1rem;"/>
+						</div>
+					</div>
+				</section>		
+				<!-------------第二页----------------->
+				<section class="swiper-slide swiper-slide2">
+					<div class="bg2">
+						<div class="logo21 ani" swiper-animate-effect="rubberBand" swiper-animate-duration="1.2s" swiper-animate-delay="0.1s">
+							<img src="img/1604062565330257.png" style="float: left;width: 3.2rem;height: 1.02rem;position: absolute;top: 0.05rem;"/>
+							<img src="img/1604061458822353.png" style="float: left;width: 0.63rem;height: 0.37rem;position: absolute;left: 2.48rem;top: 0.14rem;"/>
+						</div>
+						<div class="logo22 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="2s" swiper-animate-delay="0.5s">
+							<img src="img/1604062579407526.png" style="width: 3.2rem;height: 3.5rem;"/>
+						</div>
+						<div class="logo23 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.1s">
+							<img src="img/1604062564465572.png" style="height: 0.9rem;">
+						</div>
+					</div>				
+				</section>
+				<!-------------第三页----------------->
+				<section class="swiper-slide swiper-slide3">
+					<div class="bg3">
+						<div class="logo31 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.1s">
+							<img src="img/1604062667561438.png" style="height: 1.13rem;width:3.2rem;"/>
+						</div>
+						<div class="logo32">
+							<img src="img/1604062676016009.png" style="width: 3.2rem;height:3.7rem;top:1rem;position: absolute;"/>
+						</div>
+						<div class="logo33 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+							<img src="img/1604062564465572.png" style="height: 1.15rem;position: absolute;bottom: 0.1rem;">
+						</div>
+						<div class="P1 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+							<p>爱生活 · 爱丽家</p>
+						</div>
+						<div class="P2 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s">
+							<span>爱家的一刻，<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从爱丽家开始</span>
+						</div>
+						<div class="P3 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.7s">
+							<p>选家具到爱丽家</p>
+						</div>
+					</div>		
+				</section>
+				<!-------------第四页----------------->
+				<section class="swiper-slide swiper-slide4">
+					<div class="bg4">
+						<div class="logo41 ani" swiper-animate-effect="swing" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">
+							<img src="img/1604061458822353.png" style="position: absolute; width: 0.57rem;height: 0.35rem;top: 0.18rem;left: 0.18rem;"/>							
+						</div>
+						<div class="P4 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.2s">
+							<p style="font-size: 0.12rem;color: red;font-weight: bolder;">爱家的一刻，从爱丽家开始</p><br>
+							<p style="font-size: 0.16rem;color: red;font-weight: bolder;">爱生活·爱丽家</p>
+						</div>						
+						<div class="logo42 ani">
+							<img src="img/1604062772802225.png" style="position: absolute;z-index: 99;width: 3.19rem;height: 4.97rem;top:0.2rem;bottom: 0.25rem;vertical-align: middle;"/>
+						</div>
+						<div class="logo43 ani" swiper-animate-effect="flipInY" swiper-animate-duration="2s" swiper-animate-delay="0.2s">
+							<img src="img/1604062765454036.png" style="width: 3.1rem;height: 1.7rem;position:absolute;top:0.75rem;left: 0.05rem;">
+						</div>
+						<div class="logo44 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+							<img src="img/1604062779753554.jpg" style="width: 1.36rem;height: 1.36rem;position: absolute;top: 2.6rem;left: 0.9rem;">
+						</div>
+						<div class="P5 ani" swiper-animate-effect="swing" swiper-animate-duration="1.2s" swiper-animate-delay="0.3s">
+							<p style="font-size: 0.16rem;color: red;font-weight: bolder;">更多惊喜 关注爱丽家</p>
+						</div>
+					</div>				
+				</section>
+				
+			</div>			
+		</div>
+		
+		<script type="text/javascript">
+			(function(doc,win){
+			doc.documentElement.style.fontSize= doc.documentElement.clientWidth/3.2 + "px";
+			})(document,window);
+		</script>	
+		
+		<script>
+			var mySwiper = new Swiper ('.swiper-container', {
+			  direction: 'vertical',
+			  loop: true,
+				
+			  onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+			    swiperAnimateCache(swiper); //隐藏动画元素 
+			    swiperAnimate(swiper); //初始化完成开始动画
+			  }, 
+			  onSlideChangeEnd: function(swiper){ 
+			    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+			  } 
+			  });    
+		</script>
+		
+	</body>
+</html>
